@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Basic Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/sass/main.scss">
+    <script defer src="./src/js/controller.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <form class="user__form">
+            <input type="text" class="user__input" placeholder=". . .">
+        </form>
+
+        <div class="buttons">
+            <button class="btn btn--operation" data-operation="clear">
+                <svg class="icon icon-trash">
+                    <use href="./src/images/sprite.svg#icon-trash"></use>
+                </svg>
+            </button>
+
+            <button class="btn btn--operation" data-operation="+">
+                <svg class="icon icon-add">
+                    <use href="./src/images/sprite.svg#icon-add"></use>
+                </svg>
+            </button>
+
+            <button class="btn btn--operation" data-operation="-">
+                <svg class="icon icon-minus">
+                    <use href="./src/images/sprite.svg#icon-remove"></use>
+                </svg>
+            </button>
+
+            <button class="btn btn--operation" data-operation="delete">
+                <svg class="icon icon-times">
+                    <use href="./src/images/sprite.svg#icon-delete"></use>
+                </svg>
+            </button>
+
+            <button class="btn btn--operation btn-times" data-operation="x">
+                <svg class="icon icon-times">
+                    <use href="./src/images/sprite.svg#icon-times"></use>
+                </svg>
+            </button>
+
+            <button class="btn btn--operation btn-divide" data-operation="/">
+                <svg class="icon icon-divide">
+                    <use href="./src/images/sprite.svg#icon-divide"></use>
+                </svg>
+            </button>
+
+            <button class="btn btn--operation btn-equal" data-operation="equal">
+                <svg class="icon icon-divide">
+                    <use href="./src/images/sprite.svg#icon-equal"></use>
+                </svg>
+            </button>
+
+            <button class="btn btn--operation btn-percent" data-operation="%">
+                <svg class="icon icon-divide">
+                    <use href="./src/images/sprite.svg#icon-percent"></use>
+                </svg>
+            </button>
+
+            <button class="btn btn--number number--one" data-operation="n">1</button>
+            <button class="btn btn--number number--two" data-operation="n">2</button>
+            <button class="btn btn--number number--three" data-operation="n">3</button>
+            <button class="btn btn--number number--four" data-operation="n">4</button>
+            <button class="btn btn--number number--five" data-operation="n">5</button>
+            <button class="btn btn--number number--six" data-operation="n">6</button>
+            <button class="btn btn--number" data-operation="n">7</button>
+            <button class="btn btn--number" data-operation="n">8</button>
+            <button class="btn btn--number" data-operation="n">9</button>
+            <button class="btn btn--number" data-operation="n">0</button>
+            <button class="btn btn--number" data-operation="n">.</button>
+        </div>
+
+    </div>
+
+    <div class="waves">
+        <img src="src/images/wave.svg" alt="Wave-1" class="wave">
+        <img src="src/images/wave-1.svg" alt="Wave-2" class="wave-1">
+        <img src="src/images/wave-2.svg" alt="Wave-3" class="wave-2">
+    </div>
+</body>
+
+</html>

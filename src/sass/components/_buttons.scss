@@ -1,0 +1,23 @@
+.btn-percent{grid-row: -2 / -1;}
+
+.btn-times,
+.btn-divide {
+  grid-column: -2 / -1;
+}
+
+.btn-equal{
+  grid-column: -2 / -1;
+  grid-row: 4 / 6;
+}
+
+.number--one,
+.number--two,
+.number--three {
+  grid-row: 2 / 3;
+}
+
+.number--four,
+.number--five,
+.number--six{
+  grid-row: 3 / 4;
+}

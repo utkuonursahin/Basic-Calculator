@@ -1,0 +1,49 @@
+@use "abstracts/index" as abs;
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%; //1rem = 10px
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right,abs.$color-primary, abs.$color-secondary); 
+    background-size: 150%;
+    animation: bg-animation 15s infinite alternate;
+}
+
+.container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30%;
+    height: 90%;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: abs.$shadow-dark;
+    background-color: abs.$color-white;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(7,1fr);
+
+    @media only screen and (max-width:abs.$bp-1500){width: 35%;}
+
+    @media only screen and (max-width:abs.$bp-1200){width: 45%;}
+
+    @media only screen and (max-width:abs.$bp-700){width: 60%;}
+
+    @media only screen and (max-width:abs.$bp-600){width: 80%;}
+
+    @media only screen and (max-width:abs.$bp-500){width: 90%; height:85%;}
+}
